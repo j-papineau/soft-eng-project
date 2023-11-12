@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useMemo, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { Board } from "./Board";
 import { Timer } from "./Timer";
 import { checkEndGame, claimTile, listToMatrix } from "../lib/GameLogic";
@@ -11,12 +11,12 @@ const gameLength = 30; // Seconds 10 by default set to 30 for testing
 var columns = 3;
 var rows = 3;
 var target = 3;
-export const GameScreen: FC<GameScreenProps> = (props) => {
+export const GameScreen: FC<GameScreenProps> = () => {
   // const [columns, setColumns] = useState(3);
   // const [rows, setRows] = useState(3);
   //this var is the temp var for the input spinner
   const [inputCols, setInputCols] = useState(3);
-  const [inputRows, setInputRows] = useState(3);
+  // const [inputRows, setInputRows] = useState(3);
   const [winCon, setWinCon] = useState(3);
   const [score, setScore] = useState([0, 0]);
   const [gameOver, setGameOver] = useState<number | undefined>(undefined);
@@ -50,7 +50,7 @@ export const GameScreen: FC<GameScreenProps> = (props) => {
   };
 
   //this function handles the cpu move, currently makes a random move based on the current game state
-  function makeCPUMove(player: number){
+  function makeCPUMove(){
     console.log("making cpu move");
     // console.log("current game state");
     //pick first available tile
@@ -107,7 +107,7 @@ export const GameScreen: FC<GameScreenProps> = (props) => {
 useEffect(() => {
   if(!isPlayerOnesTurn && cpuPlayerOn){
     console.log("make cpu move")
-    makeCPUMove(1);
+    makeCPUMove();
     setIsPlayersOneTurn(true);
 
   }

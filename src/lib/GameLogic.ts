@@ -1,4 +1,4 @@
-import { getColumn, getRow, getTileIndex } from "./utils";
+import { getTileIndex } from "./utils";
 
 export type GameType = number[];
 
@@ -53,6 +53,8 @@ export function checkHorizontal(
   target: number
 ) {
 
+  index;
+
   let gameMatrix = listToMatrix(game, columns);
   
   // console.log(gameMatrix[0])
@@ -91,6 +93,8 @@ export function checkVertical(
   index: number,
   target: number
 ) {
+
+  index;
   
   let gameMatrix = listToMatrix(game, columns);
   
@@ -136,6 +140,7 @@ export function checkDiagonal(
   index: number,
   target: number
 ) {
+  index;
   //for 3x3 game, win in horiz would be 0,4,8 or 2,4,6
   let gameMatrix = listToMatrix(game, columns);
 
