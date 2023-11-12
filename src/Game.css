@@ -1,0 +1,58 @@
+.Board {
+  width: 80%;
+  margin: auto;
+}
+
+.Row {
+  display: flex;
+  place-items: center;
+}
+
+.Tile {
+  /*width: 100%;*/
+  max-width: 240px;
+  max-height: 240px;
+  height: 100%;
+  /*padding-top: 30%;*/
+  flex-grow: 1;
+}
+.TileButton {
+  width: 100%;
+  /*padding-top: 100%;*/
+}
+.TileButton button {
+  height: 100%;
+  line-height: 80px;
+
+}
+.Timer {
+  flex-grow: 1;
+  padding: 8px 16px;
+  border: 2px solid black;
+}
+.Game {
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  width: 100%;
+  padding: 2px;
+  margin: auto;
+  background: lightsteelblue;
+}
+.GameOver {
+  z-index: 500;
+}
+.TopBar {
+  display: flex;
+}
+.PlayerBox {
+
+  flex-grow: 1;
+  border: 2px solid black;
+  padding: 5px;
+}
+.PlayerBox.active {
+  background: red;
+}
