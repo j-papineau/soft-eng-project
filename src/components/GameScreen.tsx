@@ -16,7 +16,7 @@ export const GameScreen: FC<GameScreenProps> = () => {
   // const [rows, setRows] = useState(3);
   //this var is the temp var for the input spinner
   const [inputCols, setInputCols] = useState(3);
-  // const [inputRows, setInputRows] = useState(3);
+  const [inputRows, setInputRows] = useState(3);
   const [winCon, setWinCon] = useState(3);
   const [score, setScore] = useState([0, 0]);
   const [gameOver, setGameOver] = useState<number | undefined>(undefined);
@@ -34,23 +34,36 @@ export const GameScreen: FC<GameScreenProps> = () => {
     Function called when change game button is clicked
     changes game size to nxn where n is the input state var set by the spinner UI element
   */
-  function changeCols(){
-    rows = inputCols;
-    columns = inputCols;
+  function changeCols(e: any){
+    e.preventDefault()
+    console.log("cols: " + inputCols + " rows: " + rows)
+    if(inputRows != 3)
+      rows = inputRows;
+    else
+      rows = 3;
+    if(inputCols != 3)
+      columns = inputCols;
+    else
+      columns = 3;
     target = winCon;
     resetGame();
+    
+    
   }
 
   const resetGame = () => {
     setGame(Array.from({ length: rows * columns }, () => 0));
-    console.log("resetting game to size:" + rows);
+    console.log("new game matrix:");
+    console.log(game);
+   
     setGameOver(undefined);
     setIsPlayersOneTurn(true);
     setTimer(Date.now() + gameLength * 1000);
   };
 
   //this function handles the cpu move, currently makes a random move based on the current game state
-  function makeCPUMove(){
+  function makeCPUMove(player: number){
+    player;
     console.log("making cpu move");
     // console.log("current game state");
     //pick first available tile
@@ -107,7 +120,7 @@ export const GameScreen: FC<GameScreenProps> = () => {
 useEffect(() => {
   if(!isPlayerOnesTurn && cpuPlayerOn){
     console.log("make cpu move")
-    makeCPUMove();
+    makeCPUMove(1);
     setIsPlayersOneTurn(true);
 
   }
@@ -149,17 +162,26 @@ useEffect(() => {
         />
       </div>
       {/* Input box for options box */}
-      <div className="w-full h-32 flex flex-row border border-black">
+      <div className="w-full flex flex-row border border-black">
         <div className="p-3">
           <h2 className="text-xl p-2 font-semibold">Change Game Size (mxn)</h2>
-          <input className="border border-black m-4 rounded-md shadow-md" min={3} type="number" defaultValue={3} onChange={(e) => { setInputCols(parseInt(e.target.value)) }}/>
-          {/* <input className="border border-black m-4 rounded-md shadow-md" min={3} type="number" defaultValue={3} onChange={(e) => { setInputCols(parseInt(e.target.value)) }}/> */}
+          <p className="italic">Rows must be greater than columns</p>
+          <div className="flex flex-row">
+            <div>
+              <p>rows</p>
+              <input className="border border-black m-4 rounded-md shadow-md" min={3} type="number" defaultValue={3} onChange={(e) => { setInputRows(parseInt(e.target.value)) }}/>
+            </div>
+            <div>
+              <p>cols</p>
+              <input className="border border-black m-4 rounded-md shadow-md" min={3} type="number" defaultValue={3} onChange={(e) => { setInputCols(parseInt(e.target.value)) }}/>
+            </div>
+          </div>
           {/* <button className="border border-black m-4 p-2 rounded-md hover:bg-slate-400 shadow-md" onClick={changeCols}>Confirm Game Changes</button> */}
         </div>
         <div className="p-4">
           <h2 className="text-xl p-2 font-semibold">Count needed to win:</h2>
           <input className="border border-black m-4 rounded-md shadow-md" type="number" min={3} defaultValue={3} onChange={(e) => { setWinCon(parseInt(e.target.value))}} />
-          <button className="border border-black m-4 p-2 rounded-md hover:bg-slate-400 shadow-md" onClick={changeCols}>Confirm Game Changes</button>
+          <button className="border border-black m-4 p-2 rounded-md hover:bg-slate-400 shadow-md" onClick={(e) => {changeCols(e)}}>Confirm Game Changes</button>
         </div>
         <div className="flex flex-col items-center p-2">
           <h2 className="text-xl p-2 font-semibold">CPU Player (Player 2)</h2>
