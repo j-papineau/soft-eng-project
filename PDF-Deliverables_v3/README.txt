@@ -7,6 +7,9 @@
 -- run command "npm run dev" to run local dev server
 -- open web browser to localhost:3000 (a link will come up in the terminal, 3000 is the default port for the node server)
 
+    -- OR
+-- navigate to deployment URL: https://soft-eng-project-egre.vercel.app/
+
 # DEPENDENCIES
 -- JS Framework: Vite
 -- Testing Framework: Vitest (in-built)
