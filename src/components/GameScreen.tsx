@@ -246,6 +246,7 @@ export const GameScreen: FC<GameScreenProps> = () => {
           <button
             className="border border-black m-4 p-2 rounded-md hover:bg-slate-400 shadow-md bg-button text-button"
             onClick={(e) => {
+              // @ts-ignore;
               changeCols(e);
             }}
           >
