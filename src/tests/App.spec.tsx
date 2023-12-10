@@ -1,6 +1,5 @@
-import React from "react";
 import { describe, expect, test } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import App from "../App";
 //import renderer from 'react-test-renderer'
 //

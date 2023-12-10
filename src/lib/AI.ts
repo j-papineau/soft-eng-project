@@ -1,4 +1,4 @@
-import { GameType, listToMatrix } from "./GameLogic";
+import { listToMatrix } from "./GameLogic";
 import { getColumn, getRow } from "./utils";
 
 function findEmptyCells(game: number[]) {

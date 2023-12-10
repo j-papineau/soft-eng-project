@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import  { FC } from "react";
 import { GAME_STATUS, PLAYER_TWO } from "../constants";
 
 interface GameOverScreenProps {

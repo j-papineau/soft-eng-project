@@ -4,7 +4,6 @@ import { Timer } from "./Timer";
 import {
   checkEndGame,
   claimTile,
-  getCol,
   listToMatrix,
 } from "../lib/GameLogic";
 import { GameOverScreen } from "./GameOverScreen";
