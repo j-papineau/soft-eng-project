@@ -2,3 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-text: black;
+    --color-bg: white;
+    --color-tile: white;
+    --color-grid: black;
+    --color-warning: red;
+    --color-x: black;
+    --color-o: black;
+    --color-modal: white;
+    --color-input: white;
+    --color-input-text: black;
+    --color-button: blue;
+    --color-button-text: white;
+  }
+ .dark {
+    --color-text: white;
+    --color-bg: #444;
+    --color-tile: #eee;
+    --color-grid: black;
+    --color-warning: #ee1100;
+    --color-modal: blue;
+    --color-x: black;
+    --color-o: black;
+    --color-input: white;
+    --color-input-text: black;
+    --color-button: black;
+    --color-button-text: white;
+  }
+  .blue {
+    --color-text: black;
+    --color-bg: lightsteelblue;
+    --color-tile: #eee;
+    --color-grid: black;
+    --color-warning: #0022ee;
+    --color-modal: blue;
+    --color-x: blue;
+    --color-o: blue;
+    --color-input: white;
+    --color-input-text: black;
+    --color-button: #0022aa;
+    --color-button-text: white;
+
+  }
+
+}

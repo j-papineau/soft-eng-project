@@ -1,5 +1,13 @@
-import { getTileIndex } from "./utils";
+import {
+  GAME_STATUS,
+  PLAYERS,
+  PLAYER_NONE,
+  PLAYER_ONE,
+  PLAYER_TWO,
+} from "../constants";
+import { getColumn, getRow, getTileIndex } from "./utils";
 
+export type GameMatrix = number[][];
 export type GameType = number[];
 
 export function claimTile({
@@ -16,19 +24,23 @@ export function claimTile({
   column: number;
 }) {
   const index = getTileIndex(row, column, columns);
-  const player = playerOne ? 1 : -1;
+  const player = playerOne ? PLAYER_ONE : PLAYER_TWO;
   const copy = [...game];
   copy[index] = player;
   return copy;
 }
 
-export function checkEndGame(game: GameType, columns: number, target: number) {
-  const usedTiles = game.filter((g) => g !== 0).length;
-  if (usedTiles === game.length) return 2;
+export function checkEndGame(
+  game: GameType,
+  columns: number,
+  target: number
+): GAME_STATUS {
+  const usedTiles = game.filter((g) => g !== PLAYER_NONE).length;
   for (let i = 0; i < game.length; i++) {
     const res = checkTile(game, columns, i, target);
     if (res !== 0) return res;
   }
+  if (usedTiles === game.length) return GAME_STATUS.TIE;
   return 0;
 }
 export function checkTile(
@@ -36,146 +48,98 @@ export function checkTile(
   columns: number,
   index: number,
   target: number
-) {
-  
-  const horizontal = checkHorizontal(game, columns, index, target);
-  if (horizontal !== 0) return horizontal;
-  const vertical = checkVertical(game, columns, index, target);
-  if (vertical !== 0) return vertical;
-  const diagonal = checkDiagonal(game, columns, index, target);
-  if (diagonal !== 0) return diagonal;
-  return 0;
+): GAME_STATUS {
+  if (game[index] === PLAYERS.PLAYER_NONE) return GAME_STATUS.ACTIVE;
+  const gameMatrix = listToMatrix(game, columns);
+  const row = getRow(index, columns);
+  const column = getColumn(index, columns);
+  const hz = checkHz(gameMatrix, row, column, target);
+  if (hz !== PLAYERS.PLAYER_NONE) return hz;
+  const vert = checkVert(gameMatrix, row, column, target);
+  if (vert !== PLAYERS.PLAYER_NONE) return vert;
+  const fwdDiag = checkFwdDiag(gameMatrix, row, column, target);
+  if (fwdDiag !== PLAYERS.PLAYER_NONE) return fwdDiag;
+  const bwdDiag = checkBwdDiag(gameMatrix, row, column, target);
+  if (bwdDiag !== PLAYERS.PLAYER_NONE) return bwdDiag;
+  return GAME_STATUS.ACTIVE;
 }
-export function checkHorizontal(
-  game: GameType,
-  columns: number,
-  index: number,
+function checkHz(
+  gameMatrix: GameMatrix,
+  row: number,
+  column: number,
   target: number
 ) {
+  const columns = gameMatrix[0].length;
 
-  index;
-
-  let gameMatrix = listToMatrix(game, columns);
-  
-  // console.log(gameMatrix[0])
-
-  for(let i = 0; i < columns; i++){
-    let row = gameMatrix[i]
-    if(checkRow(row, target) !== 0){
-      return checkRow(row, target);
-    }
+  if (column + target - 1 > columns) return GAME_STATUS.ACTIVE;
+  let value = gameMatrix[row][column];
+  for (let i = 1; i < target; i++) {
+    const next = gameMatrix[row][column + i];
+    if (next !== value) value = 0;
   }
 
-  return 0;
+  return value;
 }
-
-export function checkRow(row: number[], target: number){
-  var lastVal = null;
-  var count = 0;
-  for(let i = 0; i < row.length; i++){
-    if(row[i] != lastVal){
-      lastVal = row[i];
-      count = 0;
-    }
-    count += 1;
-    if(target <= count){
-      return lastVal;
-    }
-  }
-  return 0;
-}
-
-
-
-export function checkVertical(
-  game: GameType,
-  columns: number,
-  index: number,
+function checkVert(
+  gameMatrix: GameMatrix,
+  row: number,
+  column: number,
   target: number
 ) {
-
-  index;
-  
-  let gameMatrix = listToMatrix(game, columns);
-  
-  //check all cols using helper
-  for(let i = 0; i < columns; i++){
-    var col = getCol(gameMatrix, i);
-    var checkColVal = checkCol(col, target);
-    if(checkColVal !== 0){
-      return checkColVal;
+  const rows = gameMatrix.length - 1;
+  if (row + target - 1 > rows) return GAME_STATUS.ACTIVE;
+  let value = gameMatrix[row][column];
+  for (let i = 1; i < target; i++) {
+    if (value !== 0) {
+      const next = gameMatrix[row + i][column];
+      if (next !== value) value = 0;
     }
   }
 
-  return 0;
+  return value;
 }
-
-export function getCol(game: number[][], col: number){
-  var column = [];
-  for(let i = 0; i < game.length; i++){
-    column.push(game[i][col]);
-  }
-  return column;
-}
-
-export function checkCol(col: number[], target: number){
-  var lastVal = null;
-  var count = 0;
-  for(let i = 0; i < col.length; i++){
-    if(col[i] != lastVal){
-      lastVal = col[i];
-      count = 0;
-    }
-    count += 1;
-    if(target <= count){
-      return lastVal;
-    }
-  }
-  return 0;
-}
-
-export function checkDiagonal(
-  game: GameType,
-  columns: number,
-  index: number,
+function checkFwdDiag(
+  gameMatrix: GameMatrix,
+  row: number,
+  column: number,
   target: number
 ) {
-  index;
-  //for 3x3 game, win in horiz would be 0,4,8 or 2,4,6
-  let gameMatrix = listToMatrix(game, columns);
+  const columns = gameMatrix[0].length;
+  if (column + target - 1 > columns - 1) return GAME_STATUS.ACTIVE;
+  if (row + target - 1 > gameMatrix.length - 1) return GAME_STATUS.ACTIVE;
 
-  // console.log(checkLeftRightDiag(gameMatrix, columns));
-
-  if(checkLeftRightDiag(gameMatrix, columns, target) != 0){
-    return checkLeftRightDiag(gameMatrix, columns, target);
-  }else if(checkRightLeftDiag(gameMatrix, columns, target) != 0){
-    return checkRightLeftDiag(gameMatrix, columns, target);
-  }
-  return 0;
-}
-
-export function checkLeftRightDiag(matrix: number[][], cols: number, target: number){
-  var diagAsArr = [];
-  for(let i = 0; i < cols; i++){
-    diagAsArr.push(matrix[i][i]);
-  }
-
-  return checkRow(diagAsArr, target);
-}
-
-export function checkRightLeftDiag(matrix: number[][], cols: number, target: number){
-  var diagAsArr = []
-  for(let i = 0; i < cols; i++){
-      diagAsArr.push(matrix[i][cols - 1 - i]);
+  let value = gameMatrix[row][column];
+  for (let i = 1; i < target; i++) {
+    if (value !== 0) {
+      const next = gameMatrix[row + i][column + i];
+      if (next !== value) value = 0;
     }
-  return checkRow(diagAsArr, target);
-}
+  }
 
-export function listToMatrix(
-  game: GameType,
-   elementsPerSubArray: number): number[][] {
+  return value;
+}
+function checkBwdDiag(
+  gameMatrix: GameMatrix,
+  row: number,
+  column: number,
+  target: number
+) {
+  const rows = gameMatrix.length - 1;
+  if (column < target - 1) return GAME_STATUS.ACTIVE;
+  if (row + target - 1 > rows) return GAME_STATUS.ACTIVE;
+  let value = gameMatrix[row][column];
+  for (let i = 1; i < target; i++) {
+    if (value !== 0) {
+      const next = gameMatrix[row + i * 1][column - i * 1];
+      if (next !== value) value = 0;
+    }
+  }
+
+  return value;
+}
+export function listToMatrix(game: GameType, elementsPerSubArray: number) {
   const matrix: number[][] = [];
-  let i, k;
+  let i: number, k: number;
 
   for (i = 0, k = -1; i < game.length; i++) {
     if (i % elementsPerSubArray === 0) {
@@ -186,7 +150,5 @@ export function listToMatrix(
     matrix[k].push(game[i]);
   }
 
-  return matrix;
+  return matrix as GameMatrix;
 }
-
-

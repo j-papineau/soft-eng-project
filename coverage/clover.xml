@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1702224533942" clover="3.2.0">
+  <project timestamp="1702224533942" name="All files">
+    <metrics statements="284" coveredstatements="214" conditionals="127" coveredconditionals="77" methods="106" coveredmethods="88" elements="517" coveredelements="379" complexity="0" loc="284" ncloc="284" packages="3" files="13" classes="13"/>
+    <package name="src">
+      <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="App.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/App.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="constants.ts" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/constants.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+      </file>
+      <file name="main.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/main.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="116" coveredstatements="53" conditionals="61" coveredconditionals="22" methods="32" coveredmethods="16"/>
+      <file name="Board.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/components/Board.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="25" count="9" type="stmt"/>
+      </file>
+      <file name="GameOverScreen.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/components/GameOverScreen.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="11" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="GameScreen.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/components/GameScreen.tsx">
+        <metrics statements="86" coveredstatements="33" conditionals="34" coveredconditionals="9" methods="20" coveredmethods="6"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="9" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="84" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="106" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="119" count="1" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="121" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="140" count="0" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="145" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="146" count="0" type="stmt"/>
+        <line num="147" count="0" type="stmt"/>
+        <line num="148" count="0" type="stmt"/>
+        <line num="152" count="1" type="stmt"/>
+        <line num="153" count="1" type="stmt"/>
+        <line num="154" count="1" type="stmt"/>
+        <line num="155" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="156" count="0" type="stmt"/>
+        <line num="157" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="158" count="0" type="stmt"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="163" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="164" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="165" count="0" type="stmt"/>
+        <line num="168" count="1" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="170" count="0" type="stmt"/>
+        <line num="171" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="173" count="1" type="stmt"/>
+        <line num="174" count="4" type="stmt"/>
+        <line num="178" count="1" type="stmt"/>
+        <line num="179" count="0" type="stmt"/>
+        <line num="180" count="0" type="stmt"/>
+        <line num="182" count="1" type="stmt"/>
+        <line num="183" count="2" type="stmt"/>
+        <line num="188" count="1" type="stmt"/>
+        <line num="217" count="0" type="stmt"/>
+        <line num="229" count="0" type="stmt"/>
+        <line num="244" count="0" type="stmt"/>
+        <line num="250" count="0" type="stmt"/>
+        <line num="265" count="0" type="stmt"/>
+      </file>
+      <file name="PlayerBox.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/components/PlayerBox.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="Tile.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/components/Tile.tsx">
+        <metrics statements="7" coveredstatements="3" conditionals="12" coveredconditionals="10" methods="2" coveredmethods="1"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="11" type="stmt"/>
+      </file>
+      <file name="Timer.tsx" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/components/Timer.tsx">
+        <metrics statements="12" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.lib">
+      <metrics statements="153" coveredstatements="147" conditionals="62" coveredconditionals="51" methods="71" coveredmethods="69"/>
+      <file name="AI.ts" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/lib/AI.ts">
+        <metrics statements="30" coveredstatements="30" conditionals="18" coveredconditionals="16" methods="7" coveredmethods="7"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="27" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="18" type="stmt"/>
+        <line num="37" count="18" type="stmt"/>
+        <line num="38" count="18" type="stmt"/>
+        <line num="39" count="144" type="stmt"/>
+        <line num="40" count="144" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="157" type="stmt"/>
+        <line num="42" count="157" type="stmt"/>
+        <line num="43" count="157" type="cond" truecount="6" falsecount="0"/>
+        <line num="44" count="102" type="stmt"/>
+        <line num="45" count="102" type="stmt"/>
+        <line num="47" count="55" type="stmt"/>
+        <line num="48" count="55" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="13" type="stmt"/>
+        <line num="50" count="13" type="stmt"/>
+        <line num="51" count="42" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="26" type="stmt"/>
+        <line num="53" count="16" type="cond" truecount="1" falsecount="1"/>
+        <line num="54" count="16" type="stmt"/>
+        <line num="56" count="42" type="stmt"/>
+        <line num="58" count="29" type="stmt"/>
+        <line num="61" count="18" type="stmt"/>
+        <line num="63" count="15" type="stmt"/>
+      </file>
+      <file name="AbstractThemeFactory.ts" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/lib/AbstractThemeFactory.ts">
+        <metrics statements="55" coveredstatements="55" conditionals="0" coveredconditionals="0" methods="50" coveredmethods="50"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="112" count="1" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="118" count="1" type="stmt"/>
+        <line num="121" count="1" type="stmt"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="130" count="1" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="138" count="1" type="stmt"/>
+        <line num="140" count="1" type="stmt"/>
+        <line num="143" count="1" type="stmt"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="149" count="1" type="stmt"/>
+        <line num="152" count="1" type="stmt"/>
+        <line num="155" count="1" type="stmt"/>
+        <line num="158" count="1" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="164" count="1" type="stmt"/>
+        <line num="167" count="1" type="stmt"/>
+        <line num="170" count="1" type="stmt"/>
+        <line num="173" count="1" type="stmt"/>
+        <line num="178" count="4" type="stmt"/>
+        <line num="192" count="4" type="stmt"/>
+        <line num="193" count="48" type="stmt"/>
+      </file>
+      <file name="GameLogic.ts" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/lib/GameLogic.ts">
+        <metrics statements="64" coveredstatements="59" conditionals="44" coveredconditionals="35" methods="9" coveredmethods="8"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="38" count="81" type="stmt"/>
+        <line num="39" count="9" type="stmt"/>
+        <line num="40" count="38" type="stmt"/>
+        <line num="41" count="38" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="52" count="38" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="8" type="stmt"/>
+        <line num="54" count="8" type="stmt"/>
+        <line num="55" count="8" type="stmt"/>
+        <line num="56" count="8" type="stmt"/>
+        <line num="57" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="58" count="8" type="stmt"/>
+        <line num="59" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="60" count="6" type="stmt"/>
+        <line num="61" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="4" type="stmt"/>
+        <line num="63" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="72" count="8" type="stmt"/>
+        <line num="74" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="75" count="6" type="stmt"/>
+        <line num="76" count="6" type="stmt"/>
+        <line num="77" count="12" type="stmt"/>
+        <line num="78" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="81" count="6" type="stmt"/>
+        <line num="89" count="8" type="stmt"/>
+        <line num="90" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="91" count="8" type="stmt"/>
+        <line num="92" count="8" type="stmt"/>
+        <line num="93" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="94" count="10" type="stmt"/>
+        <line num="95" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="99" count="8" type="stmt"/>
+        <line num="107" count="6" type="stmt"/>
+        <line num="108" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="109" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="111" count="4" type="stmt"/>
+        <line num="112" count="4" type="stmt"/>
+        <line num="113" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="114" count="7" type="stmt"/>
+        <line num="115" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="119" count="4" type="stmt"/>
+        <line num="127" count="4" type="stmt"/>
+        <line num="128" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="129" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="130" count="2" type="stmt"/>
+        <line num="131" count="2" type="stmt"/>
+        <line num="132" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="133" count="4" type="stmt"/>
+        <line num="134" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="138" count="2" type="stmt"/>
+        <line num="141" count="11" type="stmt"/>
+        <line num="144" count="11" type="stmt"/>
+        <line num="145" count="99" type="cond" truecount="2" falsecount="0"/>
+        <line num="146" count="33" type="stmt"/>
+        <line num="147" count="33" type="stmt"/>
+        <line num="150" count="99" type="stmt"/>
+        <line num="153" count="11" type="stmt"/>
+      </file>
+      <file name="utils.ts" path="/home/alex/School/fall-23/CEN4010/dev/TicTacToe/src/lib/utils.ts">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="5" count="35" type="stmt"/>
+        <line num="8" count="35" type="stmt"/>
+        <line num="11" count="18" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -1,5 +1,10 @@
 ## <i>[CEN 4010] GROUP 4'S TIC-TAC-TOE</i>
 
+# DEPLOYMENT URL
+We have decided to deploy to Vercel. This deployment is based off a clone of the base repo so code is not directly synced but must be updated manually to the other repo.
+[Visit our Deployment here](https://soft-eng-project-egre.vercel.app/)
+
+
 # INSTALLATION
 - Install Node.js on your system (current vers)
 - Clone repository from GitHub

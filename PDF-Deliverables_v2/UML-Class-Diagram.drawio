@@ -1,22 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2023-11-12T15:12:19.994Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="WpYO7n-S8WHxetI3y2HI" version="22.1.0" type="device">
+<mxfile host="app.diagrams.net" modified="2023-11-13T01:38:52.610Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="MtU_e4O3y_-MQ20SApZ_" version="22.1.0" type="device">
   <diagram name="Page-1" id="fjkCmFMoLEZDDSqKWdVA">
-    <mxGraphModel dx="1526" dy="916" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1500" math="0" shadow="0">
+    <mxGraphModel dx="931" dy="1126" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1500" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="620qPGKzAEeUMTRwe7B3-14" value="GameScreen" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="521" y="271" width="160" height="378" as="geometry">
+          <mxGeometry x="521" y="271" width="160" height="398" as="geometry">
             <mxRectangle x="158" y="344" width="98" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="620qPGKzAEeUMTRwe7B3-15" value="&lt;table width=&quot;156&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;&lt;td style=&quot;height:14.5pt;width:117pt&quot; width=&quot;156&quot; height=&quot;19&quot;&gt;+ gameLength: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ columns: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ rows: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ target: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ inputCols: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ score: number[]&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ gameOver: number|null&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ isPlayerOnesTurn: boolean&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ timer: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ cpuText: string&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ game: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ cpuPlayerOn: boolean&lt;/td&gt; &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="620qPGKzAEeUMTRwe7B3-14">
-          <mxGeometry y="26" width="160" height="251" as="geometry" />
+        <mxCell id="620qPGKzAEeUMTRwe7B3-15" value="&lt;table width=&quot;156&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;&lt;td style=&quot;height:14.5pt;width:117pt&quot; width=&quot;156&quot; height=&quot;19&quot;&gt;+ gameLength: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ columns: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ rows: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ target: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ inputCols: number&lt;br&gt;+ inputRows: number&lt;br&gt;+ winCon: number&lt;br&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ score: number[]&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ gameOver: number|null&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ isPlayerOnesTurn: boolean&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ timer: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ cpuText: string&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ game: number&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ cpuPlayerOn: boolean&lt;/td&gt; &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="620qPGKzAEeUMTRwe7B3-14">
+          <mxGeometry y="26" width="160" height="271" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="620qPGKzAEeUMTRwe7B3-14">
-          <mxGeometry y="277" width="160" height="8" as="geometry" />
+          <mxGeometry y="297" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-17" value="&lt;table width=&quot;156&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;&lt;td style=&quot;height:14.5pt;width:117pt&quot; width=&quot;156&quot; height=&quot;19&quot;&gt;+ changeCols()&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ resetGame()&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ makeCPUMove()&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;  &lt;td style=&quot;height:14.5pt&quot; height=&quot;19&quot;&gt;+ handleClick()&lt;/td&gt; &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="620qPGKzAEeUMTRwe7B3-14">
-          <mxGeometry y="285" width="160" height="93" as="geometry" />
+          <mxGeometry y="305" width="160" height="93" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-19" value="Main" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="521" y="48" width="158" height="52" as="geometry" />
@@ -128,8 +128,7 @@
             <mxPoint x="603.8" y="790.59" as="sourcePoint" />
             <mxPoint x="598.2" y="654.0090000000001" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="604" y="654" />
-              <mxPoint x="602" y="654" />
+              <mxPoint x="602" y="791" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -146,7 +145,7 @@
           <mxGeometry x="280" y="261.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-96" value="checked in" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="685" y="455" width="72" height="30" as="geometry" />
+          <mxGeometry x="681" y="479" width="72" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-97" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="815" y="749" width="72" height="30" as="geometry" />
@@ -155,22 +154,22 @@
           <mxGeometry x="934" y="752" width="72" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-100" value="displayed in" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="685" y="570" width="72" height="30" as="geometry" />
+          <mxGeometry x="685" y="593" width="72" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-101" value="displayed in" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="613" y="653" width="72" height="30" as="geometry" />
+          <mxGeometry x="606" y="669" width="72" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-102" value="displayed in" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="441" y="570" width="72" height="30" as="geometry" />
+          <mxGeometry x="440" y="591" width="72" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-103" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="345" y="752" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-104" value="1 ... *" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="603" y="749" width="60" height="30" as="geometry" />
+          <mxGeometry x="591" y="757" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-105" value="is in" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="438" y="462" width="72" height="30" as="geometry" />
+          <mxGeometry x="435" y="479" width="72" height="30" as="geometry" />
         </mxCell>
         <mxCell id="620qPGKzAEeUMTRwe7B3-106" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="163" y="752" width="30" height="30" as="geometry" />

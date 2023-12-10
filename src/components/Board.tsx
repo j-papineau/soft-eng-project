@@ -14,11 +14,11 @@ export const Board: FC<BoardProps> = ({ game, handleClick, columns }) => {
     game.slice(i * columns, (i + 1) * columns)
   );
   return (
-    <div className="text-center">
+    <div className="Board text-center bg-base">
       <div className="inline-flex flex-col">
         {rows.map((row, rowIndex) => (
           <div
-            className="inline-flex gri1d grid-flow-co1l auto-cols-f1r"
+            className="BoardRow grid grid-flow-col auto-cols-fr"
             key={`row-${rowIndex}`}
           >
             {row.map((val, index) => (
